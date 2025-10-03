@@ -1,8 +1,34 @@
 .landingpage{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+    justify-content: center;
 }
 
+.landingpage div{
+    flex: 0 0 calc(25% - 15px);
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container01, .container03{
+    background-color: #68b8b5;
+}
+
+.container02, .containertxt{
+    background-color: #dd9350;
+}
+
+.landingpage img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
 
 .sec2{
     background-color: lightgrey;
