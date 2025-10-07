@@ -30,35 +30,94 @@
 
 }
 
-.sec2{
-    background-color: lightgrey;
-    
+/* --- Secciones generales --- */
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+  font-family: 'Poppins', sans-serif;
 }
 
-.sec4{
-    background-color: lightgrey;
+/* --- Alternar colores de fondo --- */
+.sec1, .sec3 {
+  background-color: white;
 }
 
-.slide01{
-    display:flex;
-    flex-direction: row;
-}
-.slide02{
-    display:flex;
-    flex-direction: row-reverse;
-}
-.slide03{
-    display:flex;
-    flex-direction: row;
-}
-.slide04{
-    display:flex;
-    flex-direction: row-reverse;
+.sec2, .sec4 {
+  background-color: lightgrey;
 }
 
-.footer{
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    color: white;
+/* --- Slides (estructura general) --- */
+.slide01, .slide02, .slide03, .slide04 {
+  display: flex;
+  max-width: 1100px;
+  width: 90%;
+  align-items: center;
+  gap: 60px;
 }
+
+/* --- Alternar orientación --- */
+.slide01, .slide03 {
+  flex-direction: row; /* texto izquierda / imagen derecha */
+}
+
+.slide02, .slide04 {
+  flex-direction: row-reverse; /* imagen izquierda / texto derecha */
+}
+
+/* --- Texto --- */
+.slidetxt01, .slidetxt02, .slidetxt03, .slidetxt04 {
+  flex: 1;
+}
+
+.slidetxt01 h2, .slidetxt02 h2, .slidetxt03 h2, .slidetxt04 h2 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.slidetxt01 p:first-of-type,
+.slidetxt02 p:first-of-type,
+.slidetxt03 p:first-of-type,
+.slidetxt04 p:first-of-type {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.slidetxt01 h1, .slidetxt02 h1, .slidetxt03 h1, .slidetxt04 h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.slidetxt01 p, .slidetxt02 p, .slidetxt03 p, .slidetxt04 p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* --- Imágenes --- */
+.slideimg01 img, .slideimg02 img, .slideimg03 img, .slideimg04 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* --- Footer --- */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  font-size: 14px;
+}
+
+
