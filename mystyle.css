@@ -1,8 +1,8 @@
-.fa-brands fa-facebook{
-  color: black;
+
+
+.fa-brands.fa-instagram{
+  font-size: 40px;
 }
-
-
 
 .landingpage{
     display: flex;
@@ -17,17 +17,37 @@
     flex: 0 0 calc(25% - 15px);
     height: 300px;
     display: flex;
-    justify-content: center;
+    /*justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: center;*/
 }
 
-.container01, .container03{
+.numero1, .numero2, .numero3{
+  font-size: 50px;
+}
+
+.container01 p, .container01 i,
+.container02 p, .container02 i,
+.container03 p, .container03 i{
+  padding-left: 20px;
+}
+
+.container01,.container02, .container03{
     background-color: #68b8b5;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+
+
 }
 
 .container02, .containertxt{
     background-color: #dd9350;
+    font-family: 'Poppins', sans-serif;
 }
 
 .landingpage img{
