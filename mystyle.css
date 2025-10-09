@@ -1,3 +1,9 @@
+.fa-brands fa-facebook{
+  color: black;
+}
+
+
+
 .landingpage{
     display: flex;
     flex-wrap: wrap;
@@ -5,6 +11,7 @@
     padding: 20px;
     justify-content: center;
 }
+
 
 .landingpage div{
     flex: 0 0 calc(25% - 15px);
